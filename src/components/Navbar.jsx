@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -8,9 +9,9 @@ export default function Navbar() {
           <div className="font-bold text-lg text-purple-100 block">Warung Sunda</div>
           <div className="text-purple-100 flex">
             <div className="w-60 flex justify-between">
-              <div>Home</div>
-              <div>Product</div>
-              <div>About</div>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/product">Product</NavLink>
+              <NavLink to="/about">About</NavLink>
             </div>
           </div>
         </div>
